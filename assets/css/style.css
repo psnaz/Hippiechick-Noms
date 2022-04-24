@@ -19,11 +19,12 @@ html {
     box-sizing: border-box;
     font-family: var(--ff-serif);
     color: var(--clr-text);
-    font-size: 1.125rem;
+    font-size: 1.25rem;
 }
 
 body {
     margin: 0;
+    text-align: center;
 }
 
 img {
@@ -58,6 +59,13 @@ p {
 
 .section-title-small {
     font: 3rem;
+}
+
+.section-title-small small {
+    font-size: 0.7em;
+    /* line-height: 0.7; */
+    display: block;
+
 }
 
 .text-primary {
@@ -107,7 +115,7 @@ nav a:focus {
 
 .hero {
     background-color: #333;
-    background-image: url(../images/Hippie-Chick-Monkey.jpg);
+    background-image: url(../images/granola-fruit-bowl.jpg);
     background-blend-mode: multiply;
     background-attachment: fixed;
     background-size: cover;
@@ -116,17 +124,21 @@ nav a:focus {
     padding: 15vh 1em;
 }
 
-.intro {
-    text-align: center;
-}
 
 .about-us {
     background-color: var(--clr-accent);
     display: flex;
     flex-direction: column;
     color: white;
+    padding: 0;
 }
 
 .about-us__intro {
-    
+   background-image: url(../images/granola-ingredients.jpg);
+   padding: 3em 1em; 
 }
+
+.about-us__body {
+    padding: 3em 1em;
+}
+
