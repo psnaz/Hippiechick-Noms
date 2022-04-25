@@ -3,6 +3,8 @@
     --clr-text: #3d3d3d;
     --clr-primary: #067e0a;
     --clr-accent: #613b6b;
+    --clr-primary-dark: #0125814;
+    --clr-accent-dark: #442649;
 
     --ff-title: "BFNarrow", sans-serif;
     --ff-serif: "Crimson Text", serif;
@@ -30,6 +32,14 @@ body {
 img {
     display: block;
     max-width: 100%;
+}
+
+section {
+    padding: 3em 1em;
+}
+
+.mb-0 {
+    margin-bottom: 0;
 }
 
 /* Typography */
@@ -131,6 +141,21 @@ nav a:focus {
     background-color: var(--clr-primary);
 }
 
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: var(--clr-primary-dark);
+}
+
+.btn-accent {
+    background: var(--clr-accent);
+}
+
+.btn-accent:hover,
+.btn-accent:focus {
+    background-color: var(--clr-accent-dark);
+}
+
+
 /* Homepage styles */
 
 .hero {
@@ -175,4 +200,19 @@ nav a:focus {
     border-radius: 1em;
     overflow: hidden;
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
+}
+
+.product__content {
+    padding: 1.5em;
+}
+
+.product__title {
+    color: var(--clr-primary);
+    font-size: 2.5rem;
+    margin-bottom: 0.5em;
+}
+
+.fineprint {
+    font-size: 0.75rem;
+    color: rgba(0, 0, 0, 0.85);
 }
